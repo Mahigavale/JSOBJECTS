@@ -15,3 +15,17 @@ for(let x in profile)
   console.log(x," ",profile[x]);
 }
 console.log(text);
+
+
+profile.taluka='satara';
+console.log(profile);
+
+
+//to delete simply give the expression after the delete keyword.
+//it will delete the specified property from the object.
+console.log("deletion poeartin here:",delete profile.taluka);
+console.log('deleted property here:',profile.taluka);
+
+// if the specified property is deleted sucessfully then it returns the 
+//boolean value as true. otherwise false.
+console.log('atfer deletion:',profile);
