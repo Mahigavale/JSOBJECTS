@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center; background-color: aqua;" >
+ <p>The name of the person is:<h4 id="name"></h4></p>
+ <button type="submit" onclick="document.getElementById('name').innerHTML=x  ">Name_Click</button>
+ <p>the wealth of the person is:<h4 id="wealth"></h4></p>
+ <button type="button" onclick="document.getElementById('wealth').innerHTML=property">wealth_check</button>
+ <p>the car brand he loves:<h4 id="carb"></h4></p>
+ <button type="submit" onclick="document.getElementById('carb').innerHTML=ncr">Car_Brand</button>
+ <p>the cars he has:</p>
+ <button type="submit" onclick="document.getElementById('demor').innerHTML=list">Car_List</button>
+ <ol id="demor">
+ </ol>
+    <ol id="cars">
+        <script>
+            let data=crs;
+            let list;
+            for(let i=0;i<crs.length;i++)
+            {
+                 let li=document.createElement('li');
+                 li.innerText=data[i];
+                 list.appendChild(li);
+
+             }
+
+        </script>
+    </ol>
+
+
+
+<script>
+let members=
+
+{
+    namep:'mahesh',
+    welath:'3330 million $$',
+    cars:{name:'bmw',
+    models:['ase','bjk','asdf']
+    }
+}
+
+let x='';
+let crs='';
+let ncr='';
+let property='';
+for (let v in members)
+{
+    x=members.namep;
+    property=members.welath;
+    for(let z in members.cars )
+    {
+        crs=" "+members.cars.models;
+    }
+    ncr=members.cars.name;
+
+}
+</script>
+   
+</body>
+</html>
